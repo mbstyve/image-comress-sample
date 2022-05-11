@@ -1,0 +1,12 @@
+<input
+  type="file"
+  accept=".jpg,.png,.jpeg"
+  id="image-input"
+  (change)="selectFile($event)"
+/>
+<div class="flexi">
+  <div>Original: Size: {{ sizeOfOriginalImage }}</div>
+  <div><img [src]="localUrl" width="400" /></div>
+  <div>Compressed: Size: {{ sizeOFCompressedImage }}</div>
+  <div><img [src]="localCompressedURl" width="400" /></div>
+</div>
